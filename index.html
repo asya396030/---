@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайный Санта</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="snowflakes">
+        <!-- Анимированные снежинки -->
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+    </div>
+
+    <header class="header">
+        <h1 class="title">🎅 Тайный Санта 🎄</h1>
+        <p class="subtitle">Создай новогоднее волшебство для своих друзей!</p>
+    </header>
+
+    <main class="content">
+        <div class="santa-wrapper">
+            <img src="santa.png" alt="Санта" class="santa">
+        </div>
+        <div class="tree-wrapper">
+            <img src="5.png" alt="Елка" class="tree">
+        </div>
+
+        <section class="form-container">
+            <h2 class="form-title">Введите имена участников 🎁</h2>
+            <textarea id="namesInput" class="names-input" placeholder="Например: Анна, Иван, Ольга..."></textarea>
+            <button class="randomize-button" onclick="generatePairs()">Запустить магию ✨</button>
+        </section>
+
+        <section id="results" class="results"></section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Тайный Санта | Подарите друг другу радость! 🎄</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
